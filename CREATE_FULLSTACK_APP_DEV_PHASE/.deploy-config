@@ -1,0 +1,8 @@
+# opus deploy config file, i have no idea what this is...
+
+# generated 2025-10-24T12:03:13+02:00
+SSH_KEY_PATH="/Users/stian.larsen/Downloads/aws-upload/default_key/LightsailDefaultKey-eu-north-1.pem"
+REMOTE_SERVER="jupp"
+REMOTE_PATH="nei"
+JAR_NAME="nei"
+SERVER_DIR="/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v2_opus__NEW-CHAT__gpt_5/create-fullstack-app/templates/frontend"

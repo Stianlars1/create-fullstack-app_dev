@@ -1,0 +1,46 @@
+{
+  "name": "@stianlarsen/create-fullstack-app",
+  "version": "1.0.0",
+  "description": "Generate production-ready Next.js + Spring Boot applications with zero configuration",
+  "type": "module",
+  "bin": {
+    "create-fullstack-app": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fullstack",
+    "generator",
+    "nextjs",
+    "spring-boot",
+    "docker",
+    "typescript",
+    "kotlin",
+    "scaffold",
+    "cli"
+  ],
+  "author": "Stian Larsen",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stianlarsen/create-fullstack-app"
+  },
+  "bugs": {
+    "url": "https://github.com/stianlarsen/create-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/stianlarsen/create-fullstack-app#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

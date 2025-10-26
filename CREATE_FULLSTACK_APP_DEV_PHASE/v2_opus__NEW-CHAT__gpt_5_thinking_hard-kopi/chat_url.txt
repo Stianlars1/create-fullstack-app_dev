@@ -1,0 +1,6 @@
+Claude first initial setup:
+https://claude.ai/chat/8bc1a9ce-5efb-403f-a7b5-e0142a577971
+
+Chat gpu add-on:
+https://chatgpt.com/c/68fb3a82-bce0-832d-afd0-6b8a5176280b
+

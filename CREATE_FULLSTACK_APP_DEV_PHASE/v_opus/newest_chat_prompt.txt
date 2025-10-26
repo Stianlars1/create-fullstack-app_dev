@@ -1,0 +1,129 @@
+used in https://claude.ai/chat/cd0a34ca-0b85-45cd-9c15-308ebeeb3dd8
+
+As promised, here is the Original Claude Opus's solution. Ill first show you the file-tree, then ill attach the files and code he gave me.
+
+## file tree
+
+```shell
+➜  create-fullstack-app
+➜  create-fullstack-app pwd
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app
+➜  create-fullstack-app
+➜  create-fullstack-app tree
+.
+├── DAILY_USAGE_COMPARISON.md
+├── Dockerfile
+├── IMPLEMENTATION_GUIDE.md
+├── README.md
+├── add-database.js
+├── application.properties
+├── build.gradle.kts
+├── deploy.sh
+├── index.js
+├── mnt
+│   └── user-data
+│       └── outputs
+│           └── create-fullstack-app
+│               └── templates
+│                   └── frontend
+│                       ├── Dockerfile
+│                       └── package.json
+├── next.config.js
+└── package.json
+
+7 directories, 13 files
+➜  create-fullstack-app
+```
+
+### notice!
+Why is the frontend and backend templates in that weird location path?
+right now its this:
+
+```shell
+├── mnt
+│   └── user-data
+│       └── outputs
+│           └── create-fullstack-app
+│               └── templates
+│                   └── frontend
+│                       ├── Dockerfile
+│                       └── package.json
+```
+
+which isnt relative to root at:
+
+```
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/mnt/user-data/outputs/create-fullstack-app/templates
+```
+
+From that pasted path, root should be this:
+
+```
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/templates
+```
+
+Or maybe im wrong. this is your expertise, not mine.
+
+
+## Code files
+
+```
+file:/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/opus%20message.txt
+file:/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/chat_url.txt
+file:/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/
+file:/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/.deploy-config
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/add-database.js
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/application.properties
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/build.gradle.kts
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/DAILY_USAGE_COMPARISON.md
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/deploy.sh
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/Dockerfile
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/IMPLEMENTATION_GUIDE.md
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/index.js
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/next.config.js
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/package.json
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/README.md
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/mnt/user-data/outputs/create-fullstack-app/templates/frontend/Dockerfile
+
+/Users/stian.larsen/Downloads/CREATE_FULLSTACK_APP/v_opus/create-fullstack-app/mnt/user-data/outputs/create-fullstack-app/templates/frontend/package.json
+
+```
+
+
+## Opinion
+Whilst ive come a farther way with chat gpt, im interested in seeing how you would go forward trying to create a better solution.
+
+## remarks
+From Opus's solution, i notice theres a `next.config.js` file in the projects root directory. I find this a bit weird? maybe im wrong, in my head i then think youve started adding the frontend nextjs template files directly there, but maybe its for the CLI tool and im stupid?
+
+## Code structure from Opus
+Im not a fan of the mess it made, you can please clean up, structure and organize.
+
+## backend template
+The backend template isnt done, its unfinished. As you now i have a older version of it which is a bit outdated, and i plan on updating and optimizing it later on. But the configs etc can we start with ofcourse.
+
+So, our backend needs the application.properties, also it needs the credentials and stuff set-up based upon the script setup.
+
+## frontend template
+i dont think this needs anything specific? i can see chatgpt has done some stuff in them both with dockerfiles etc, but im not sure if he has lost hes mind or is on the right track of something.
+
+## now
+* analøyse both of the unfinished code suggestions.
+* figure out which version to go with, or build something from scratch "taking the best from both worlds"
+* always keep thinking about our end-goal and the origin of the task, to automate everything, we want as little manual labor as possible.
+* env's, configs, templates etc.. whcih needs population of data based on database, email, CLI TOOL setup stuff: automate this.
+* have a clean structure, be organized.
+
+GET STARTED <3

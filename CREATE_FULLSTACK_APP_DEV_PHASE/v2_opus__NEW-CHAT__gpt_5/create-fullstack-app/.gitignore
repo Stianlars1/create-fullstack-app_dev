@@ -1,0 +1,21 @@
+# root
+node_modules/
+dist/
+build/
+.mint/ # if any
+.DS_Store
+
+# Next.js template outputs
+templates/frontend/.next/
+templates/frontend/node_modules/
+templates/frontend/out/
+
+# Gradle and Java
+**/.gradle/
+**/build/
+**/*.log
+
+# Docker
+**/.dockerignore
+
+
